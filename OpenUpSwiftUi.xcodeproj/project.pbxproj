@@ -14,9 +14,12 @@
 		C0ADD70727D543A400F1B417 /* OpenUpSwiftUiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0ADD6DF27D543A400F1B417 /* OpenUpSwiftUiApp.swift */; };
 		C0ADD70827D543A400F1B417 /* OpenUpSwiftUiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0ADD6DF27D543A400F1B417 /* OpenUpSwiftUiApp.swift */; };
 		C0ADD70927D543A400F1B417 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0ADD6E027D543A400F1B417 /* ContentView.swift */; };
-		C0ADD70A27D543A400F1B417 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0ADD6E027D543A400F1B417 /* ContentView.swift */; };
 		C0ADD70B27D543A400F1B417 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0ADD6E127D543A400F1B417 /* Assets.xcassets */; };
 		C0ADD70C27D543A400F1B417 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0ADD6E127D543A400F1B417 /* Assets.xcassets */; };
+		C0ADD72927D5730100F1B417 /* PaperOnboarding in Frameworks */ = {isa = PBXBuildFile; productRef = C0ADD72827D5730100F1B417 /* PaperOnboarding */; };
+		C0CA839927D6897D00CF8D78 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CA839827D6897D00CF8D78 /* StartView.swift */; };
+		C0CA839C27D689E700CF8D78 /* LikedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CA839B27D689E700CF8D78 /* LikedView.swift */; };
+		C0CA839E27D689EE00CF8D78 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CA839D27D689EE00CF8D78 /* AboutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		C0ADD6FF27D543A400F1B417 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0ADD70327D543A400F1B417 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		C0ADD70527D543A400F1B417 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		C0CA839827D6897D00CF8D78 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		C0CA839B27D689E700CF8D78 /* LikedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedView.swift; sourceTree = "<group>"; };
+		C0CA839D27D689EE00CF8D78 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0ADD72927D5730100F1B417 /* PaperOnboarding in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +93,7 @@
 		C0ADD6D927D543A400F1B417 = {
 			isa = PBXGroup;
 			children = (
+				C0CA839A27D6898800CF8D78 /* Views */,
 				C0ADD6DE27D543A400F1B417 /* Shared */,
 				C0ADD6ED27D543A400F1B417 /* macOS */,
 				C0ADD6F627D543A400F1B417 /* Tests iOS */,
@@ -98,7 +106,6 @@
 			isa = PBXGroup;
 			children = (
 				C0ADD6DF27D543A400F1B417 /* OpenUpSwiftUiApp.swift */,
-				C0ADD6E027D543A400F1B417 /* ContentView.swift */,
 				C0ADD6E127D543A400F1B417 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -141,6 +148,17 @@
 			path = "Tests macOS";
 			sourceTree = "<group>";
 		};
+		C0CA839A27D6898800CF8D78 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C0ADD6E027D543A400F1B417 /* ContentView.swift */,
+				C0CA839827D6897D00CF8D78 /* StartView.swift */,
+				C0CA839B27D689E700CF8D78 /* LikedView.swift */,
+				C0CA839D27D689EE00CF8D78 /* AboutView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -157,6 +175,9 @@
 			dependencies = (
 			);
 			name = "OpenUpSwiftUi (iOS)";
+			packageProductDependencies = (
+				C0ADD72827D5730100F1B417 /* PaperOnboarding */,
+			);
 			productName = "OpenUpSwiftUi (iOS)";
 			productReference = C0ADD6E627D543A400F1B417 /* OpenUpSwiftUi.app */;
 			productType = "com.apple.product-type.application";
@@ -249,6 +270,10 @@
 				Base,
 			);
 			mainGroup = C0ADD6D927D543A400F1B417;
+			packageReferences = (
+				C0ADD72327D56F8500F1B417 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				C0ADD72727D5730100F1B417 /* XCRemoteSwiftPackageReference "paper-onboarding" */,
+			);
 			productRefGroup = C0ADD6E727D543A400F1B417 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -299,8 +324,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0CA839927D6897D00CF8D78 /* StartView.swift in Sources */,
 				C0ADD70927D543A400F1B417 /* ContentView.swift in Sources */,
+				C0CA839C27D689E700CF8D78 /* LikedView.swift in Sources */,
 				C0ADD70727D543A400F1B417 /* OpenUpSwiftUiApp.swift in Sources */,
+				C0CA839E27D689EE00CF8D78 /* AboutView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,7 +336,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0ADD70A27D543A400F1B417 /* ContentView.swift in Sources */,
 				C0ADD70827D543A400F1B417 /* OpenUpSwiftUiApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -703,6 +730,33 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C0ADD72327D56F8500F1B417 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		C0ADD72727D5730100F1B417 /* XCRemoteSwiftPackageReference "paper-onboarding" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Ramotion/paper-onboarding";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C0ADD72827D5730100F1B417 /* PaperOnboarding */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C0ADD72727D5730100F1B417 /* XCRemoteSwiftPackageReference "paper-onboarding" */;
+			productName = PaperOnboarding;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C0ADD6DA27D543A400F1B417 /* Project object */;
 }
