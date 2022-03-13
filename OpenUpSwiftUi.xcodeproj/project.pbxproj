@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C001DBCE27DEB52200B3E2C6 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C001DBCD27DEB52200B3E2C6 /* WebView.swift */; };
 		C06ED5AC27D6D34700FC2F89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C06ED5AB27D6D34700FC2F89 /* Assets.xcassets */; };
 		C0ADD6F827D543A400F1B417 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0ADD6F727D543A400F1B417 /* Tests_iOS.swift */; };
 		C0ADD6FA27D543A400F1B417 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0ADD6F927D543A400F1B417 /* Tests_iOSLaunchTests.swift */; };
@@ -15,7 +16,6 @@
 		C0ADD70727D543A400F1B417 /* OpenUpSwiftUiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0ADD6DF27D543A400F1B417 /* OpenUpSwiftUiApp.swift */; };
 		C0ADD70827D543A400F1B417 /* OpenUpSwiftUiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0ADD6DF27D543A400F1B417 /* OpenUpSwiftUiApp.swift */; };
 		C0ADD70927D543A400F1B417 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0ADD6E027D543A400F1B417 /* ContentView.swift */; };
-		C0ADD72927D5730100F1B417 /* PaperOnboarding in Frameworks */ = {isa = PBXBuildFile; productRef = C0ADD72827D5730100F1B417 /* PaperOnboarding */; };
 		C0AF43CB27DA60D7007392C2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0AF43CA27DA60D7007392C2 /* HomeView.swift */; };
 		C0AF43CD27DA6120007392C2 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0AF43CC27DA6120007392C2 /* AboutView.swift */; };
 		C0AF43CF27DA615C007392C2 /* LikedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0AF43CE27DA615C007392C2 /* LikedView.swift */; };
@@ -39,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C001DBCD27DEB52200B3E2C6 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		C06ED5AB27D6D34700FC2F89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../Library/Mobile Documents/com~apple~CloudDocs/Documents/GitHub/OpenUP/Final Build OpenUp/OpenUP build/Assets.xcassets"; sourceTree = "<group>"; };
 		C0ADD6DF27D543A400F1B417 /* OpenUpSwiftUiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenUpSwiftUiApp.swift; sourceTree = "<group>"; };
 		C0ADD6E027D543A400F1B417 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -61,7 +62,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0ADD72927D5730100F1B417 /* PaperOnboarding in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +153,7 @@
 				C0ADD6E027D543A400F1B417 /* ContentView.swift */,
 				C0AF43CA27DA60D7007392C2 /* HomeView.swift */,
 				C0AF43CC27DA6120007392C2 /* AboutView.swift */,
+				C001DBCD27DEB52200B3E2C6 /* WebView.swift */,
 				C0AF43CE27DA615C007392C2 /* LikedView.swift */,
 			);
 			path = Views;
@@ -175,7 +176,6 @@
 			);
 			name = "OpenUpSwiftUi (iOS)";
 			packageProductDependencies = (
-				C0ADD72827D5730100F1B417 /* PaperOnboarding */,
 			);
 			productName = "OpenUpSwiftUi (iOS)";
 			productReference = C0ADD6E627D543A400F1B417 /* OpenUpSwiftUi.app */;
@@ -271,7 +271,6 @@
 			mainGroup = C0ADD6D927D543A400F1B417;
 			packageReferences = (
 				C0ADD72327D56F8500F1B417 /* XCRemoteSwiftPackageReference "lottie-ios" */,
-				C0ADD72727D5730100F1B417 /* XCRemoteSwiftPackageReference "paper-onboarding" */,
 			);
 			productRefGroup = C0ADD6E727D543A400F1B417 /* Products */;
 			projectDirPath = "";
@@ -325,6 +324,7 @@
 				C0AF43CD27DA6120007392C2 /* AboutView.swift in Sources */,
 				C0AF43CB27DA60D7007392C2 /* HomeView.swift in Sources */,
 				C0ADD70927D543A400F1B417 /* ContentView.swift in Sources */,
+				C001DBCE27DEB52200B3E2C6 /* WebView.swift in Sources */,
 				C0ADD70727D543A400F1B417 /* OpenUpSwiftUiApp.swift in Sources */,
 				C0AF43CF27DA615C007392C2 /* LikedView.swift in Sources */,
 			);
@@ -738,23 +738,7 @@
 				minimumVersion = 3.0.0;
 			};
 		};
-		C0ADD72727D5730100F1B417 /* XCRemoteSwiftPackageReference "paper-onboarding" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Ramotion/paper-onboarding";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 6.0.0;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		C0ADD72827D5730100F1B417 /* PaperOnboarding */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C0ADD72727D5730100F1B417 /* XCRemoteSwiftPackageReference "paper-onboarding" */;
-			productName = PaperOnboarding;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C0ADD6DA27D543A400F1B417 /* Project object */;
 }

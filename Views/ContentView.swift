@@ -16,21 +16,21 @@ struct ContentView: View {
             HomeView()
                 .tabItem {
                     Image(systemName: "house")
-                    Text("Home")
+                    Text("Hjem")
                 }
             
             //Liked View in Tab
             LikedView()
                 .tabItem {
                     Image(systemName: "heart")
-                    Text("Liked Icebreakers")
+                    Text("Likede Icebreakers")
                 }
             
             //About View in Tab
             AboutView()
                 .tabItem {
                     Image(systemName: "person.2")
-                    Text("About")
+                    Text("Om os")
                 }
             }
              

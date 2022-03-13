@@ -6,16 +6,19 @@
 //
 
 import SwiftUI
+import WebKit
+
 
 struct AboutView: View {
+    
     var body: some View {
         NavigationView {
+            SwiftUIWebView(url: URL(string: "https://openup-app.webflow.io/"
+                                   ))
             
-            ZStack {
-                Color.blue
-        
-            }
-            .navigationTitle("About")
+                .navigationBarTitle(Text("Læs mere om os 😎"), displayMode: .inline)
+                
+                
         }
     }
 }

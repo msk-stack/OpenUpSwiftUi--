@@ -40,16 +40,17 @@ struct HomeView: View {
                 //Color.red
                 ScrollView {
                 VStack(alignment: .leading) {
-                    Step(title: "1.", subtitle: "Open settings", desc: "be sure to add the keyboard")
-                    Step(title: "2.", subtitle: "Enable ", desc: "Connect with peopple")
-                    Step(title: "3.", subtitle: "this", desc: "Here")
-                    Step(title: "4.", subtitle: "this", desc: "this is what you have to do")
+                    Step(title: "1.", subtitle: "Åben tastatur indstillinger", desc: "Vælg OpenUp Tastaturet")
+                    Step(title: "2.", subtitle: "Gå ind i valgfri social-app", desc: "Tryk på 🌐 og vælg OpenUp - English")
+                    Step(title: "3.", subtitle: "Test vores icebreakers", desc: "Send beskederne med et enkelt tryk")
+                    Step(title: "4.", subtitle: "Hvis du vil slette din besked", desc: "Så swipe fra højre til venstre for at slette")
 
                 }
-                .padding(20)
+                .padding(10)
+                
                 }
             }
-            .navigationTitle("Home")
+            .navigationTitle("Velkommen! 🙏")
         }
     }
 }
