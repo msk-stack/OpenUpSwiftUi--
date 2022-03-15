@@ -12,7 +12,7 @@ struct OpenUpSwiftUiApp: App {
     
     var body: some Scene {
         WindowGroup {
-        // ContentView()
+        ContentView()
             
         }
     }
