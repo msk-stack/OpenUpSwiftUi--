@@ -1,11 +1,7 @@
 # OpenUP Tastaturet
 _**mere end 100 - pickup lines inde i dit iOS tastatur**_
 
-<<<<<<< HEAD
-<img src="https://github.com/msk-stack/OpenUpSwiftUi--/blob/main/preview.png">
-=======
-<img src="https://github.com/msk-stack/OpenUpSwiftUi--/blob/main/preview.png" height="370" width="230">
->>>>>>> f6ef6051b901c4c88e642c7f95dd46a453f2610c
+<img src="https://github.com/msk-stack/OpenUpSwiftUi--/blob/main/preview.png" width="250">
 
 ### Installation
 1. Clone the repository
