@@ -13,4 +13,4 @@ Visit our website : https://openup-app.webflow.io/
 
 **Developed by** \
 Phillip Lundin | phillip.linnemnan.lundin@gmail.com \
-Manas Singh Katyal | manaskatyal@gmail.com
+Manas Singh Katyal | manassinghkatyal@gmail.com 
