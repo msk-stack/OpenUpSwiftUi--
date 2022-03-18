@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C4529F527E4D86A00B73DF0 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4529F427E4D86A00B73DF0 /* KeyboardViewController.swift */; };
+		1C4529F727E4DA6700B73DF0 /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4529F627E4DA6700B73DF0 /* KeyboardView.swift */; };
 		C001DBCE27DEB52200B3E2C6 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C001DBCD27DEB52200B3E2C6 /* WebView.swift */; };
 		C0ADD70727D543A400F1B417 /* OpenUpSwiftUiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0ADD6DF27D543A400F1B417 /* OpenUpSwiftUiApp.swift */; };
 		C0ADD70827D543A400F1B417 /* OpenUpSwiftUiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0ADD6DF27D543A400F1B417 /* OpenUpSwiftUiApp.swift */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C4529F427E4D86A00B73DF0 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		1C4529F627E4DA6700B73DF0 /* KeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
 		C001DBCD27DEB52200B3E2C6 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		C0ADD6DF27D543A400F1B417 /* OpenUpSwiftUiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenUpSwiftUiApp.swift; sourceTree = "<group>"; };
 		C0ADD6E027D543A400F1B417 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -80,6 +84,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C4529F327E4D83D00B73DF0 /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				1C4529F427E4D86A00B73DF0 /* KeyboardViewController.swift */,
+				1C4529F627E4DA6700B73DF0 /* KeyboardView.swift */,
+			);
+			path = Keyboard;
+			sourceTree = "<group>";
+		};
 		C0ADD6D927D543A400F1B417 = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +125,7 @@
 		C0CA839A27D6898800CF8D78 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1C4529F327E4D83D00B73DF0 /* Keyboard */,
 				C0ADD6E027D543A400F1B417 /* ContentView.swift */,
 				C0AF43CA27DA60D7007392C2 /* HomeView.swift */,
 				C0AF43CC27DA6120007392C2 /* AboutView.swift */,
@@ -284,9 +298,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0AF43CD27DA6120007392C2 /* AboutView.swift in Sources */,
+				1C4529F727E4DA6700B73DF0 /* KeyboardView.swift in Sources */,
 				C0AF43CB27DA60D7007392C2 /* HomeView.swift in Sources */,
 				C0ADD70927D543A400F1B417 /* ContentView.swift in Sources */,
 				C001DBCE27DEB52200B3E2C6 /* WebView.swift in Sources */,
+				1C4529F527E4D86A00B73DF0 /* KeyboardViewController.swift in Sources */,
 				C0ADD70727D543A400F1B417 /* OpenUpSwiftUiApp.swift in Sources */,
 				C0AF43CF27DA615C007392C2 /* LikedView.swift in Sources */,
 			);
