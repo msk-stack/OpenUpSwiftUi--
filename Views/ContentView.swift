@@ -20,7 +20,7 @@ struct ContentView: View {
                 }
             
             //Liked View in Tab
-            LikedView()
+            LikedView(textField: "")
                 .tabItem {
                     Image(systemName: "heart")
                     Text("Likede Icebreakers")
