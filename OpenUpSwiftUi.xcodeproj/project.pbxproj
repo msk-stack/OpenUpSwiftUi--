@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1C4529F527E4D86A00B73DF0 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4529F427E4D86A00B73DF0 /* KeyboardViewController.swift */; };
-		1C4529F727E4DA6700B73DF0 /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4529F627E4DA6700B73DF0 /* KeyboardView.swift */; };
+		1C6CE99527E54376007556EC /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6CE99427E54376007556EC /* KeyboardViewController.swift */; };
+		1C6CE99927E54376007556EC /* OpenUp Keyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1C6CE99227E54376007556EC /* OpenUp Keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C001DBCE27DEB52200B3E2C6 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C001DBCD27DEB52200B3E2C6 /* WebView.swift */; };
 		C0ADD70727D543A400F1B417 /* OpenUpSwiftUiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0ADD6DF27D543A400F1B417 /* OpenUpSwiftUiApp.swift */; };
 		C0ADD70827D543A400F1B417 /* OpenUpSwiftUiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0ADD6DF27D543A400F1B417 /* OpenUpSwiftUiApp.swift */; };
@@ -20,6 +20,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1C6CE99727E54376007556EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0ADD6DA27D543A400F1B417 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C6CE99127E54376007556EC;
+			remoteInfo = "OpenUp Keyboard";
+		};
 		C0ADD6F427D543A400F1B417 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C0ADD6DA27D543A400F1B417 /* Project object */;
@@ -36,9 +43,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1C6CE99A27E54376007556EC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1C6CE99927E54376007556EC /* OpenUp Keyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		1C4529F427E4D86A00B73DF0 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
-		1C4529F627E4DA6700B73DF0 /* KeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
+		1C6CE99227E54376007556EC /* OpenUp Keyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "OpenUp Keyboard.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C6CE99427E54376007556EC /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		1C6CE99627E54376007556EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C001DBCD27DEB52200B3E2C6 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		C0ADD6DF27D543A400F1B417 /* OpenUpSwiftUiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenUpSwiftUiApp.swift; sourceTree = "<group>"; };
 		C0ADD6E027D543A400F1B417 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +75,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1C6CE98F27E54376007556EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C0ADD6E327D543A400F1B417 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -84,13 +113,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1C4529F327E4D83D00B73DF0 /* Keyboard */ = {
+		1C6CE99327E54376007556EC /* OpenUp Keyboard */ = {
 			isa = PBXGroup;
 			children = (
-				1C4529F427E4D86A00B73DF0 /* KeyboardViewController.swift */,
-				1C4529F627E4DA6700B73DF0 /* KeyboardView.swift */,
+				1C6CE99427E54376007556EC /* KeyboardViewController.swift */,
+				1C6CE99627E54376007556EC /* Info.plist */,
 			);
-			path = Keyboard;
+			path = "OpenUp Keyboard";
 			sourceTree = "<group>";
 		};
 		C0ADD6D927D543A400F1B417 = {
@@ -98,6 +127,7 @@
 			children = (
 				C0CA839A27D6898800CF8D78 /* Views */,
 				C0ADD6DE27D543A400F1B417 /* Shared */,
+				1C6CE99327E54376007556EC /* OpenUp Keyboard */,
 				C0ADD6E727D543A400F1B417 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -118,6 +148,7 @@
 				C0ADD6EC27D543A400F1B417 /* OpenUpSwiftUi.app */,
 				C0ADD6F327D543A400F1B417 /* Tests iOS.xctest */,
 				C0ADD6FF27D543A400F1B417 /* Tests macOS.xctest */,
+				1C6CE99227E54376007556EC /* OpenUp Keyboard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,7 +156,6 @@
 		C0CA839A27D6898800CF8D78 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				1C4529F327E4D83D00B73DF0 /* Keyboard */,
 				C0ADD6E027D543A400F1B417 /* ContentView.swift */,
 				C0AF43CA27DA60D7007392C2 /* HomeView.swift */,
 				C0AF43CC27DA6120007392C2 /* AboutView.swift */,
@@ -138,6 +168,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1C6CE99127E54376007556EC /* OpenUp Keyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C6CE99D27E54376007556EC /* Build configuration list for PBXNativeTarget "OpenUp Keyboard" */;
+			buildPhases = (
+				1C6CE98E27E54376007556EC /* Sources */,
+				1C6CE98F27E54376007556EC /* Frameworks */,
+				1C6CE99027E54376007556EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OpenUp Keyboard";
+			productName = "OpenUp Keyboard";
+			productReference = 1C6CE99227E54376007556EC /* OpenUp Keyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		C0ADD6E527D543A400F1B417 /* OpenUpSwiftUi (iOS) */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C0ADD70F27D543A400F1B417 /* Build configuration list for PBXNativeTarget "OpenUpSwiftUi (iOS)" */;
@@ -145,10 +192,12 @@
 				C0ADD6E227D543A400F1B417 /* Sources */,
 				C0ADD6E327D543A400F1B417 /* Frameworks */,
 				C0ADD6E427D543A400F1B417 /* Resources */,
+				1C6CE99A27E54376007556EC /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1C6CE99827E54376007556EC /* PBXTargetDependency */,
 			);
 			name = "OpenUpSwiftUi (iOS)";
 			packageProductDependencies = (
@@ -220,6 +269,9 @@
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
+					1C6CE99127E54376007556EC = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
 					C0ADD6E527D543A400F1B417 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
@@ -256,11 +308,19 @@
 				C0ADD6EB27D543A400F1B417 /* OpenUpSwiftUi (macOS) */,
 				C0ADD6F227D543A400F1B417 /* Tests iOS */,
 				C0ADD6FE27D543A400F1B417 /* Tests macOS */,
+				1C6CE99127E54376007556EC /* OpenUp Keyboard */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1C6CE99027E54376007556EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C0ADD6E427D543A400F1B417 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -293,16 +353,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1C6CE98E27E54376007556EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C6CE99527E54376007556EC /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C0ADD6E227D543A400F1B417 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C0AF43CD27DA6120007392C2 /* AboutView.swift in Sources */,
-				1C4529F727E4DA6700B73DF0 /* KeyboardView.swift in Sources */,
 				C0AF43CB27DA60D7007392C2 /* HomeView.swift in Sources */,
 				C0ADD70927D543A400F1B417 /* ContentView.swift in Sources */,
 				C001DBCE27DEB52200B3E2C6 /* WebView.swift in Sources */,
-				1C4529F527E4D86A00B73DF0 /* KeyboardViewController.swift in Sources */,
 				C0ADD70727D543A400F1B417 /* OpenUpSwiftUiApp.swift in Sources */,
 				C0AF43CF27DA615C007392C2 /* LikedView.swift in Sources */,
 			);
@@ -333,6 +399,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		1C6CE99827E54376007556EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1C6CE99127E54376007556EC /* OpenUp Keyboard */;
+			targetProxy = 1C6CE99727E54376007556EC /* PBXContainerItemProxy */;
+		};
 		C0ADD6F527D543A400F1B417 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C0ADD6E527D543A400F1B417 /* OpenUpSwiftUi (iOS) */;
@@ -346,6 +417,61 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		1C6CE99B27E54376007556EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D8PT79X2ZG;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "OpenUp Keyboard/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "OpenUp Keyboard";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "redfine.OpenUpSwiftUi.OpenUp-Keyboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1C6CE99C27E54376007556EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D8PT79X2ZG;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "OpenUp Keyboard/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "OpenUp Keyboard";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "redfine.OpenUpSwiftUi.OpenUp-Keyboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		C0ADD70D27D543A400F1B417 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -460,6 +586,7 @@
 		C0ADD71027D543A400F1B417 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -490,6 +617,7 @@
 		C0ADD71127D543A400F1B417 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -656,6 +784,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1C6CE99D27E54376007556EC /* Build configuration list for PBXNativeTarget "OpenUp Keyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C6CE99B27E54376007556EC /* Debug */,
+				1C6CE99C27E54376007556EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C0ADD6DD27D543A400F1B417 /* Build configuration list for PBXProject "OpenUpSwiftUi" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
