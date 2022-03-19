@@ -11,7 +11,6 @@
 		1C6CE99927E54376007556EC /* OpenUp Keyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1C6CE99227E54376007556EC /* OpenUp Keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C001DBCE27DEB52200B3E2C6 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C001DBCD27DEB52200B3E2C6 /* WebView.swift */; };
 		C0ADD70727D543A400F1B417 /* OpenUpSwiftUiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0ADD6DF27D543A400F1B417 /* OpenUpSwiftUiApp.swift */; };
-		C0ADD70827D543A400F1B417 /* OpenUpSwiftUiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0ADD6DF27D543A400F1B417 /* OpenUpSwiftUiApp.swift */; };
 		C0ADD70927D543A400F1B417 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0ADD6E027D543A400F1B417 /* ContentView.swift */; };
 		C0AF43CB27DA60D7007392C2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0AF43CA27DA60D7007392C2 /* HomeView.swift */; };
 		C0AF43CD27DA6120007392C2 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0AF43CC27DA6120007392C2 /* AboutView.swift */; };
@@ -27,23 +26,19 @@
 			remoteGlobalIDString = 1C6CE99127E54376007556EC;
 			remoteInfo = "OpenUp Keyboard";
 		};
-		C0ADD6F427D543A400F1B417 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C0ADD6DA27D543A400F1B417 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C0ADD6E527D543A400F1B417;
-			remoteInfo = "OpenUpSwiftUi (iOS)";
-		};
-		C0ADD70027D543A400F1B417 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C0ADD6DA27D543A400F1B417 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C0ADD6EB27D543A400F1B417;
-			remoteInfo = "OpenUpSwiftUi (macOS)";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		1C12508627E5DD2500D6EAB1 /* Embed App Clips */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/AppClips";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed App Clips";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1C6CE99A27E54376007556EC /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -65,9 +60,6 @@
 		C0ADD6DF27D543A400F1B417 /* OpenUpSwiftUiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenUpSwiftUiApp.swift; sourceTree = "<group>"; };
 		C0ADD6E027D543A400F1B417 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C0ADD6E627D543A400F1B417 /* OpenUpSwiftUi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenUpSwiftUi.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C0ADD6EC27D543A400F1B417 /* OpenUpSwiftUi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenUpSwiftUi.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C0ADD6F327D543A400F1B417 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C0ADD6FF27D543A400F1B417 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0AF43CA27DA60D7007392C2 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		C0AF43CC27DA6120007392C2 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		C0AF43CE27DA615C007392C2 /* LikedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedView.swift; sourceTree = "<group>"; };
@@ -83,27 +75,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		C0ADD6E327D543A400F1B417 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C0ADD6E927D543A400F1B417 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C0ADD6F027D543A400F1B417 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C0ADD6FC27D543A400F1B417 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -145,9 +116,6 @@
 			isa = PBXGroup;
 			children = (
 				C0ADD6E627D543A400F1B417 /* OpenUpSwiftUi.app */,
-				C0ADD6EC27D543A400F1B417 /* OpenUpSwiftUi.app */,
-				C0ADD6F327D543A400F1B417 /* Tests iOS.xctest */,
-				C0ADD6FF27D543A400F1B417 /* Tests macOS.xctest */,
 				1C6CE99227E54376007556EC /* OpenUp Keyboard.appex */,
 			);
 			name = Products;
@@ -193,6 +161,7 @@
 				C0ADD6E327D543A400F1B417 /* Frameworks */,
 				C0ADD6E427D543A400F1B417 /* Resources */,
 				1C6CE99A27E54376007556EC /* Embed App Extensions */,
+				1C12508627E5DD2500D6EAB1 /* Embed App Clips */,
 			);
 			buildRules = (
 			);
@@ -205,59 +174,6 @@
 			productName = "OpenUpSwiftUi (iOS)";
 			productReference = C0ADD6E627D543A400F1B417 /* OpenUpSwiftUi.app */;
 			productType = "com.apple.product-type.application";
-		};
-		C0ADD6EB27D543A400F1B417 /* OpenUpSwiftUi (macOS) */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C0ADD71227D543A400F1B417 /* Build configuration list for PBXNativeTarget "OpenUpSwiftUi (macOS)" */;
-			buildPhases = (
-				C0ADD6E827D543A400F1B417 /* Sources */,
-				C0ADD6E927D543A400F1B417 /* Frameworks */,
-				C0ADD6EA27D543A400F1B417 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "OpenUpSwiftUi (macOS)";
-			productName = "OpenUpSwiftUi (macOS)";
-			productReference = C0ADD6EC27D543A400F1B417 /* OpenUpSwiftUi.app */;
-			productType = "com.apple.product-type.application";
-		};
-		C0ADD6F227D543A400F1B417 /* Tests iOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C0ADD71527D543A400F1B417 /* Build configuration list for PBXNativeTarget "Tests iOS" */;
-			buildPhases = (
-				C0ADD6EF27D543A400F1B417 /* Sources */,
-				C0ADD6F027D543A400F1B417 /* Frameworks */,
-				C0ADD6F127D543A400F1B417 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C0ADD6F527D543A400F1B417 /* PBXTargetDependency */,
-			);
-			name = "Tests iOS";
-			productName = "Tests iOS";
-			productReference = C0ADD6F327D543A400F1B417 /* Tests iOS.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
-		C0ADD6FE27D543A400F1B417 /* Tests macOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C0ADD71827D543A400F1B417 /* Build configuration list for PBXNativeTarget "Tests macOS" */;
-			buildPhases = (
-				C0ADD6FB27D543A400F1B417 /* Sources */,
-				C0ADD6FC27D543A400F1B417 /* Frameworks */,
-				C0ADD6FD27D543A400F1B417 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C0ADD70127D543A400F1B417 /* PBXTargetDependency */,
-			);
-			name = "Tests macOS";
-			productName = "Tests macOS";
-			productReference = C0ADD6FF27D543A400F1B417 /* Tests macOS.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -274,17 +190,6 @@
 					};
 					C0ADD6E527D543A400F1B417 = {
 						CreatedOnToolsVersion = 13.2.1;
-					};
-					C0ADD6EB27D543A400F1B417 = {
-						CreatedOnToolsVersion = 13.2.1;
-					};
-					C0ADD6F227D543A400F1B417 = {
-						CreatedOnToolsVersion = 13.2.1;
-						TestTargetID = C0ADD6E527D543A400F1B417;
-					};
-					C0ADD6FE27D543A400F1B417 = {
-						CreatedOnToolsVersion = 13.2.1;
-						TestTargetID = C0ADD6EB27D543A400F1B417;
 					};
 				};
 			};
@@ -305,9 +210,6 @@
 			projectRoot = "";
 			targets = (
 				C0ADD6E527D543A400F1B417 /* OpenUpSwiftUi (iOS) */,
-				C0ADD6EB27D543A400F1B417 /* OpenUpSwiftUi (macOS) */,
-				C0ADD6F227D543A400F1B417 /* Tests iOS */,
-				C0ADD6FE27D543A400F1B417 /* Tests macOS */,
 				1C6CE99127E54376007556EC /* OpenUp Keyboard */,
 			);
 		};
@@ -326,27 +228,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0CD60B327DFDC950065CC45 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C0ADD6EA27D543A400F1B417 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C0ADD6F127D543A400F1B417 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C0ADD6FD27D543A400F1B417 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,28 +255,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C0ADD6E827D543A400F1B417 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C0ADD70827D543A400F1B417 /* OpenUpSwiftUiApp.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C0ADD6EF27D543A400F1B417 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C0ADD6FB27D543A400F1B417 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -403,16 +262,6 @@
 			isa = PBXTargetDependency;
 			target = 1C6CE99127E54376007556EC /* OpenUp Keyboard */;
 			targetProxy = 1C6CE99727E54376007556EC /* PBXContainerItemProxy */;
-		};
-		C0ADD6F527D543A400F1B417 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C0ADD6E527D543A400F1B417 /* OpenUpSwiftUi (iOS) */;
-			targetProxy = C0ADD6F427D543A400F1B417 /* PBXContainerItemProxy */;
-		};
-		C0ADD70127D543A400F1B417 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C0ADD6EB27D543A400F1B417 /* OpenUpSwiftUi (macOS) */;
-			targetProxy = C0ADD70027D543A400F1B417 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -646,141 +495,6 @@
 			};
 			name = Release;
 		};
-		C0ADD71327D543A400F1B417 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = D8PT79X2ZG;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 12.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = redfine.OpenUpSwiftUi;
-				PRODUCT_NAME = OpenUpSwiftUi;
-				SDKROOT = macosx;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		C0ADD71427D543A400F1B417 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = D8PT79X2ZG;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 12.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = redfine.OpenUpSwiftUi;
-				PRODUCT_NAME = OpenUpSwiftUi;
-				SDKROOT = macosx;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		C0ADD71627D543A400F1B417 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = D8PT79X2ZG;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "redfine.Tests-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "OpenUpSwiftUi (iOS)";
-			};
-			name = Debug;
-		};
-		C0ADD71727D543A400F1B417 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = D8PT79X2ZG;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "redfine.Tests-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "OpenUpSwiftUi (iOS)";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		C0ADD71927D543A400F1B417 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = D8PT79X2ZG;
-				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "redfine.Tests-macOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = "OpenUpSwiftUi (macOS)";
-			};
-			name = Debug;
-		};
-		C0ADD71A27D543A400F1B417 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = D8PT79X2ZG;
-				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "redfine.Tests-macOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = "OpenUpSwiftUi (macOS)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -807,33 +521,6 @@
 			buildConfigurations = (
 				C0ADD71027D543A400F1B417 /* Debug */,
 				C0ADD71127D543A400F1B417 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C0ADD71227D543A400F1B417 /* Build configuration list for PBXNativeTarget "OpenUpSwiftUi (macOS)" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C0ADD71327D543A400F1B417 /* Debug */,
-				C0ADD71427D543A400F1B417 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C0ADD71527D543A400F1B417 /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C0ADD71627D543A400F1B417 /* Debug */,
-				C0ADD71727D543A400F1B417 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C0ADD71827D543A400F1B417 /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C0ADD71927D543A400F1B417 /* Debug */,
-				C0ADD71A27D543A400F1B417 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
